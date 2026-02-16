@@ -1,6 +1,7 @@
 import React from "react";
 import { Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 import certisignSvg from "../images/certisign.svg";
+import lhLogoSvg from "../images/icon.svg";
 
 const Footer: React.FC = () => {
   return (
@@ -11,15 +12,19 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-20 mb-20">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-4 mb-8 group cursor-default">
-              <div className="w-12 h-12 border-2 border-[#cba246] flex items-center justify-center font-serif text-[#cba246] text-xl font-bold group-hover:bg-[#cba246] group-hover:text-[#0f172a] transition-all duration-500">
-                LH
+              <div className="w-12 h-12 flex items-center justify-center overflow-hidden group-hover:bg-[#cba246] transition-all duration-500">
+                <img
+                  src={lhLogoSvg}
+                  alt="Lincoln Hoshino Logo"
+                  className="w-full h-full object-contain p-1"
+                />
               </div>
               <div className="flex flex-col leading-none">
                 <span className="font-serif text-white text-2xl tracking-wide">
                   Lincoln Hoshino
                 </span>
                 <span className="text-[9px] uppercase tracking-[0.4em] text-[#cba246] mt-1 font-bold">
-                  Advocacia de Elite
+                  Advocacia Internacional
                 </span>
               </div>
             </div>
