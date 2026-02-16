@@ -1,14 +1,26 @@
 import React from 'react';
+import justiceGoddessImage from '../images/justice-goddess.png';
 
 const Hero: React.FC = () => {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center pt-24 overflow-hidden">
       {/* Background with Motion */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[url('/images/justice-goddess.png')] bg-cover bg-fixed bg-center opacity-[0.05] grayscale"></div>
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=2070')] bg-cover bg-fixed bg-center opacity-[0.05] grayscale"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-[#0f172a] via-[#0f172a]/80 to-[#0f172a]"></div>
         <div className="absolute top-1/3 -right-1/4 w-[700px] h-[700px] bg-[#cba246]/5 rounded-full blur-[180px]"></div>
         <div className="absolute -bottom-1/4 -left-1/4 w-[500px] h-[500px] bg-[#cba246]/3 rounded-full blur-[150px]"></div>
+      </div>
+
+      {/* Right Side Background Image */}
+      <div className="absolute right-0 top-0 h-full w-full lg:w-1/2 z-0 pointer-events-none overflow-hidden hidden lg:block">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url(${justiceGoddessImage})`,
+            opacity: 0.3
+          }}
+        ></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
