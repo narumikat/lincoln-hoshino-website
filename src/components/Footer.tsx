@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
               <a href="https://www.instagram.com/lincolnhoshino" target="_blank" rel="noopener noreferrer" className="w-12 h-12 glass-card rounded-full flex items-center justify-center hover:bg-[#cba246] hover:text-[#0f172a] transition-all group/icon">
                 <Instagram className="w-5 h-5 group-hover/icon:scale-110 transition-transform" />
               </a>
-              <a href="https://www.linkedin.com/in/lincolnhoshino" target="_blank" rel="noopener noreferrer" className="w-12 h-12 glass-card rounded-full flex items-center justify-center hover:bg-[#cba246] hover:text-[#0f172a] transition-all group/icon">
+              <a href="https://www.linkedin.com/in/lincoln-hoshino-058338310/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 glass-card rounded-full flex items-center justify-center hover:bg-[#cba246] hover:text-[#0f172a] transition-all group/icon">
                 <Linkedin className="w-5 h-5 group-hover/icon:scale-110 transition-transform" />
               </a>
             </div>
