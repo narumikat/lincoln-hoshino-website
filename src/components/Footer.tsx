@@ -1,5 +1,6 @@
 import React from 'react';
-import { Instagram, Linkedin, Mail, Phone, ExternalLink } from 'lucide-react';
+import { Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import certisignSvg from '../images/certisign.svg';
 
 const Footer: React.FC = () => {
   return (
@@ -19,12 +20,16 @@ const Footer: React.FC = () => {
             <p className="max-w-md mb-10 text-sm leading-relaxed font-light">
               Compromisso inabalável com a excelência jurídica entre continentes. Credenciado Certising e especializado em Direito Internacional e Imobiliário.
             </p>
+            <div className="flex items-center gap-6 mb-6">
+              <img src={certisignSvg} alt="Certising" className="h-6 opacity-80" />
+            </div>
             <div className="flex gap-6">
-              {[Instagram, Linkedin].map((Icon, i) => (
-                <a key={i} href="#" className="w-12 h-12 glass-card rounded-full flex items-center justify-center hover:bg-[#cba246] hover:text-[#0f172a] transition-all group/icon">
-                  <Icon className="w-5 h-5 group-hover/icon:scale-110 transition-transform" />
-                </a>
-              ))}
+              <a href="https://www.instagram.com/lincolnhoshino" target="_blank" rel="noopener noreferrer" className="w-12 h-12 glass-card rounded-full flex items-center justify-center hover:bg-[#cba246] hover:text-[#0f172a] transition-all group/icon">
+                <Instagram className="w-5 h-5 group-hover/icon:scale-110 transition-transform" />
+              </a>
+              <a href="https://www.linkedin.com/in/lincolnhoshino" target="_blank" rel="noopener noreferrer" className="w-12 h-12 glass-card rounded-full flex items-center justify-center hover:bg-[#cba246] hover:text-[#0f172a] transition-all group/icon">
+                <Linkedin className="w-5 h-5 group-hover/icon:scale-110 transition-transform" />
+              </a>
             </div>
           </div>
 
@@ -40,20 +45,34 @@ const Footer: React.FC = () => {
 
           <div>
             <h4 className="text-[#cba246] font-bold mb-10 uppercase tracking-[0.4em] text-[10px]">Canais de Acesso</h4>
-            <ul className="space-y-8 text-xs font-light">
+            <ul className="space-y-6 text-xs font-light">
               <li className="flex items-start gap-4">
-                <Mail className="w-5 h-5 text-[#cba246]/60 mt-px" />
-                <span className="hover:text-white transition-colors cursor-pointer">contato@lincolnhoshino.com</span>
+                <Mail className="w-5 h-5 text-[#cba246]/60 mt-px flex-shrink-0" />
+                <div className="flex flex-col gap-1">
+                  <a href="mailto:lhoshino@lincolnhoshino.com.br" className="hover:text-white transition-colors">lhoshino@lincolnhoshino.com.br</a>
+                  <a href="mailto:lincolnhoshino@hotmail.com" className="hover:text-white transition-colors">lincolnhoshino@hotmail.com</a>
+                </div>
               </li>
               <li className="flex items-start gap-4">
-                <Phone className="w-5 h-5 text-[#cba246]/60 mt-px" />
-                <span className="hover:text-white transition-colors cursor-pointer">+55 (XX) XXXX-XXXX</span>
+                <Phone className="w-5 h-5 text-[#cba246]/60 mt-px flex-shrink-0" />
+                <div className="flex flex-col gap-1">
+                  <a href="https://wa.me/5511994801887" className="hover:text-white transition-colors">WhatsApp BR: +55 11 99480-1887</a>
+                  <a href="tel:+551130905012" className="hover:text-white transition-colors">BR: +55 11 3090-5012</a>
+                  <a href="https://wa.me/817010637393" className="hover:text-white transition-colors">WhatsApp JP: +81 70 1063-7393</a>
+                </div>
               </li>
-              <li className="flex items-center gap-4">
-                <a href="#" className="flex items-center gap-2 text-[#cba246] font-bold uppercase tracking-[0.2em] group">
-                  Consultoria Online
-                  <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </a>
+              <li className="flex items-start gap-4">
+                <MapPin className="w-5 h-5 text-[#cba246]/60 mt-px flex-shrink-0" />
+                <div className="flex flex-col gap-2">
+                  <div>
+                    <span className="text-[#cba246] font-semibold block mb-1">Brasil:</span>
+                    <span className="hover:text-white transition-colors">Av. Pedroso de Morais, 103 - Pinheiros<br/>São Paulo - SP, 05419-000</span>
+                  </div>
+                  <div>
+                    <span className="text-[#cba246] font-semibold block mb-1">Japão:</span>
+                    <span className="hover:text-white transition-colors">Hoshino Building 3F<br/>8-11-10 Nishi-Shinjuku<br/>Shinjuku, Tokyo 160-0023</span>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>

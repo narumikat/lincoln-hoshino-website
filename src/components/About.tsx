@@ -1,4 +1,5 @@
 import React from 'react';
+import lincolnImage from '../images/lincoln.png';
 
 const About: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const About: React.FC = () => {
             <div className="gradient-border-gold p-1 shadow-[0_0_50px_rgba(0,0,0,0.5)] transition-all duration-1000 group-hover:scale-[1.03]">
               <div className="aspect-[3/4] rounded-sm overflow-hidden relative glass-card">
                 <img 
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800" 
+                  src={lincolnImage}
                   alt="Dr. Lincoln Hoshino"
                   className="w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 hover:brightness-105 transition-all duration-1000"
                 />

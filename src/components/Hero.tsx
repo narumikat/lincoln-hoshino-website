@@ -55,7 +55,9 @@ const Hero: React.FC = () => {
 
           <h1 className="text-7xl md:text-[10rem] text-white mb-8 font-serif leading-[0.85] tracking-tighter pr-4 break-words overflow-visible">
             Lincoln <br />
-            <span className="text-gradient-gold italic inline-block pr-2">Hoshino</span>
+            <span className="text-gradient-gold italic inline-block pr-2">
+              Hoshino
+            </span>
           </h1>
 
           <div className="h-[2px] w-48 bg-gradient-to-r from-[#cba246] via-[#cba246]/40 to-transparent my-12"></div>

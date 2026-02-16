@@ -7,6 +7,7 @@ import DigitalSection from '../components/DigitalSection';
 import Locations from '../components/Locations';
 import Footer from '../components/Footer';
 import { MessageCircle } from 'lucide-react';
+import certisignSvg from '../images/certisign.svg';
 
 const HomePage: React.FC = () => {
   return (
@@ -23,7 +24,7 @@ const HomePage: React.FC = () => {
               <span className="text-xl font-serif text-white italic">Lincoln Hoshino Advogados</span>
               <div className="h-4 w-px bg-white/20 hidden md:block"></div>
               <div className="flex flex-col items-center">
-                <span className="text-lg font-serif font-bold italic text-white tracking-widest">Certising</span>
+                <img src={certisignSvg} alt="Certising" className="h-6 mb-1 opacity-80" />
                 <span className="text-[8px] uppercase tracking-tighter">Autoridade Certificadora</span>
               </div>
               <div className="h-4 w-px bg-white/20 hidden md:block"></div>
@@ -55,7 +56,7 @@ const HomePage: React.FC = () => {
                   Soluções personalizadas voltadas para resultados. Independente da sua localização, conectamos seus direitos ao futuro.
                 </p>
                 <a 
-                  href="https://wa.me/55000000000" 
+                  href="https://wa.me/5511994801887" 
                   className="inline-flex items-center gap-4 bg-[#cba246] text-[#0f172a] px-12 py-5 rounded-sm font-bold text-sm tracking-[0.2em] uppercase hover:bg-[#e5c16d] transition-all shadow-xl shadow-[#cba246]/10"
                 >
                   <MessageCircle className="w-5 h-5" />
@@ -71,7 +72,7 @@ const HomePage: React.FC = () => {
 
       {/* Elegant WhatsApp Float */}
       <a 
-        href="https://wa.me/55000000000" 
+        href="https://wa.me/5511994801887" 
         className="fixed bottom-10 right-10 z-50 bg-[#25D366] text-white p-5 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all group"
         aria-label="Agendar no WhatsApp"
       >

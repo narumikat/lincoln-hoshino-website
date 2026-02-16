@@ -56,8 +56,8 @@ const Navbar: React.FC = () => {
               </a>
             ))}
 
-            <a
-              href="https://wa.me/55000000000"
+            <a 
+              href="https://wa.me/5511994801887" 
               className="bg-transparent border border-[#cba246]/40 text-[#cba246] px-8 py-3 rounded-sm text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-[#cba246] hover:text-[#0f172a] transition-all duration-500"
             >
               Consultoria
