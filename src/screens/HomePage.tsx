@@ -24,7 +24,7 @@ const HomePage: React.FC = () => {
               <span className="text-xl font-serif text-white italic">Lincoln Hoshino Advogados</span>
               <div className="h-4 w-px bg-white/20 hidden md:block"></div>
               <div className="flex flex-col items-center">
-                <img src={certisignSvg} alt="Certising" className="h-6 mb-1 opacity-80" />
+                <img src={certisignSvg} alt="Certising" className="h-12 mb-1 opacity-80" />
                 <span className="text-[8px] uppercase tracking-tighter">Autoridade Certificadora</span>
               </div>
               <div className="h-4 w-px bg-white/20 hidden md:block"></div>

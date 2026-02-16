@@ -77,8 +77,8 @@ const DigitalSection: React.FC = () => {
                 <img
                   src={certisignSvg}
                   alt="Certising"
-                  className="h-8 mb-2 opacity-80"
-                  style={{ width: "100px" }}
+                  className="h-16 mb-2 opacity-80"
+                  style={{ width: "200px" }}
                 />
                 <span className="text-[8px] uppercase tracking-widest text-slate-500">
                   Credenciado Oficial

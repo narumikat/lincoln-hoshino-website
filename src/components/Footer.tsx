@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
               Compromisso inabalável com a excelência jurídica entre continentes. Credenciado Certising e especializado em Direito Internacional e Imobiliário.
             </p>
             <div className="flex items-center gap-6 mb-6">
-              <img src={certisignSvg} alt="Certising" className="h-6 opacity-80" />
+              <img src={certisignSvg} alt="Certising" className="h-12 opacity-80" />
             </div>
             <div className="flex gap-6">
               <a href="https://www.instagram.com/lincolnhoshino" target="_blank" rel="noopener noreferrer" className="w-12 h-12 glass-card rounded-full flex items-center justify-center hover:bg-[#cba246] hover:text-[#0f172a] transition-all group/icon">
