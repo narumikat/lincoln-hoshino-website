@@ -45,16 +45,21 @@ const Navbar: React.FC = () => {
           </div>
 
           <div className="hidden lg:flex items-center gap-12">
-            {["Inicio", "Sobre", "Servicos", "Digital"].map((item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                className="text-white/60 hover:text-[#cba246] transition-all text-[10px] font-bold uppercase tracking-[0.3em] relative group"
-              >
-                {item}
-                <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#cba246] group-hover:w-full transition-all duration-500"></span>
-              </a>
-            ))}
+            {["Inicio", "Sobre", "Servicos", "Digital"].map((item) => {
+              const href =
+                item === "Sobre" ? "/sobre" : `#${item.toLowerCase()}`;
+
+              return (
+                <a
+                  key={item}
+                  href={href}
+                  className="text-white/60 hover:text-[#cba246] transition-all text-[10px] font-bold uppercase tracking-[0.3em] relative group"
+                >
+                  {item}
+                  <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#cba246] group-hover:w-full transition-all duration-500"></span>
+                </a>
+              );
+            })}
 
             <a 
               href="https://wa.me/5511994801887" 
