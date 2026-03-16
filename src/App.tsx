@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./screens/HomePage";
 import AboutPage from "./screens/AboutPage";
+import ServicesPage from "./screens/ServicesPage";
+import DigitalPage from "./screens/DigitalPage";
 
 const App: React.FC = () => {
   return (
@@ -10,6 +12,8 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/sobre" element={<AboutPage />} />
+          <Route path="/servicos" element={<ServicesPage />} />
+          <Route path="/digital" element={<DigitalPage />} />
         </Routes>
       </div>
     </BrowserRouter>

@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
               : ""
           }`}
         >
-          <div className="flex items-center gap-4">
+          <a href="/" className="flex items-center gap-4">
             <div className="w-12 h-12 flex items-center justify-center rounded-sm overflow-hidden">
               <img
                 src={iconSvg}
@@ -42,12 +42,20 @@ const Navbar: React.FC = () => {
                 Advocacia Internacional
               </span>
             </div>
-          </div>
+          </a>
 
           <div className="hidden lg:flex items-center gap-12">
             {["Inicio", "Sobre", "Servicos", "Digital"].map((item) => {
               const href =
-                item === "Sobre" ? "/sobre" : `#${item.toLowerCase()}`;
+                item === "Sobre"
+                  ? "/sobre"
+                  : item === "Inicio"
+                  ? "/"
+                  : item === "Servicos"
+                  ? "/servicos"
+                  : item === "Digital"
+                  ? "/digital"
+                  : `#${item.toLowerCase()}`;
 
               return (
                 <a
@@ -63,6 +71,8 @@ const Navbar: React.FC = () => {
 
             <a 
               href="https://wa.me/5511994801887" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-transparent border border-[#cba246]/40 text-[#cba246] px-8 py-3 rounded-sm text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-[#cba246] hover:text-[#0f172a] transition-all duration-500"
             >
               Consultoria

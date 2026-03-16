@@ -134,8 +134,8 @@ const AboutPage: React.FC = () => {
             {[
               { year: "2024", title: "Expansão Internacional", desc: "Consolidação da parceria estratégica com escritórios no Japão." },
               { year: "2022", title: "Liderança na OAB", desc: "Nomeado Presidente da Comissão de Direito Imobiliário da OAB/SP Lapa." },
-              { year: "2018", title: "Fundação do Escritório", desc: "Início das atividades com foco em direito imobiliário e digital." },
-              { year: "2015", title: "Formação Acadêmica", desc: "Graduação em Direito pelas Faculdades Integradas Rio Branco." }
+              { year: "2018", title: "Início da atuação como advogado", desc: "Fundação do escritório com foco em direito imobiliário e digital." },
+              { year: "2013", title: "Formação Acadêmica", desc: "Graduação em Direito pelas Faculdades Integradas Rio Branco." }
             ].map((item, i) => (
               <motion.div 
                 key={i} 

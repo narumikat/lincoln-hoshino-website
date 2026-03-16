@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-6 text-xs uppercase tracking-widest font-semibold">
               <li>
                 <a
-                  href="#inicio"
+                  href="/"
                   className="hover:text-white transition-all hover:translate-x-2 inline-block"
                 >
                   Home
@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="#servicos"
+                  href="/servicos"
                   className="hover:text-white transition-all hover:translate-x-2 inline-block"
                 >
                   Serviços
@@ -91,7 +91,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="#digital"
+                  href="/digital"
                   className="hover:text-white transition-all hover:translate-x-2 inline-block"
                 >
                   Cartório Digital
